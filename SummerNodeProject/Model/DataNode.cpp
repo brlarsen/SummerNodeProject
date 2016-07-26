@@ -13,7 +13,7 @@
 template <class Type>
 DataNode<Type> :: DataNode()
 {
-    this->nodeData = nullptr;
+    this->nodePointer = nullptr;
 }
 
 template <class Type>
@@ -33,9 +33,22 @@ Type DataNode<Type> :: getNodeData()
 }
 
 template <class Type>
+void DataNode<Type> :: setNodeData(Type nodeData)
+{
+    this-> nodeData = nodeData;
+}
+
+template <class Type>
+DataNode<Type> * DataNode<Type> :: getNodePointer()
+{
+    return nodePointer;
+}
+
+template <class Type>
 void DataNode<Type> :: setNodePointer(DataNode<Type>* nodePointer)
 {
     this->nodePointer = nodePointer;
 }
+
 
 //End Getters/Setters
