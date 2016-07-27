@@ -31,7 +31,7 @@ public:
     int getSize();
     void addAtIndex(int index, Type data);
     void add(Type data);
-    void atAtFront(int index);
+    void addAtFront(Type data);
     Type remove(int index);
     bool contains(Type data);
     
