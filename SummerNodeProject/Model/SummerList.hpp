@@ -1,39 +1,40 @@
 //
-//  SummerArray.hpp
+//  SummerList.hpp
 //  SummerNodeProject
 //
 //  Created by Henrichsen, Cody on 7/27/16.
 //  Copyright © 2016 workshop. All rights reserved.
 //
 
-#ifndef SummerArray_hpp
-#define SummerArray_hpp
+#ifndef SummerList_hpp
+#define SummerList_hpp
 
 #include <stdio.h>
 #include "DataNode.hpp"
 
 template <class Type>
-class SummerArray
+class SummerList
 {
 private:
-    int length;
-    bool * modifiedNodes;
+    int size;
     DataNode<Type> * front;
     DataNode<Type> * end;
     
 public:
-    SummerArray(int length);
+    SummerList();
     
     Type getFromIndex(int index);
     Type getFirst();
     Type getLast();
     void setAtIndex(int index, Type data);
     
-    void sort();
-    void resize(int newSize);
-    int getUnusedNodes();
-    int getLength();
+    int getSize();
+    void addAtIndex(int index, Type data);
+    void add(Type data);
+    void atAtFront(int index);
+    Type remove(int index);
+    bool contains(Type data);
     
 };
 
-#endif /* SummerArray_hpp */
+#endif /* SummerList_hpp */
