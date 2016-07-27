@@ -26,7 +26,7 @@ public:
     Type getFromIndex(int index);
     Type getFirst();
     Type getLast();
-    void setAtIndex(int index, Type data);
+    Type setAtIndex(int index, Type data);
     
     int getSize();
     void addAtIndex(int index, Type data);
