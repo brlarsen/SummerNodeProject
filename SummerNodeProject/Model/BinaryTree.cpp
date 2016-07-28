@@ -60,7 +60,7 @@ void BinaryTree<Type> :: preOrderTraversal(BinaryTreeNode<Type> * currentNode)
 {
     if(currentNode != nullptr)
     {
-        cout << currentNode -> getNodeData() < ", ";
+        cout << currentNode -> getNodeData() << ", ";
         preOrderTraversal(currentNode -> getLeftChild());
         preOrderTraversal(currentNode -> getRightChild());
     }
@@ -73,7 +73,7 @@ void BinaryTree<Type> :: postOrderTraversal(BinaryTreeNode<Type> * currentNode)
     {
         postOrderTraversal(currentNode -> getLeftChild());
         postOrderTraversal(currentNode -> getRightChild());
-        cout << currentNode -> getNodeData() < ", ";
+        cout << currentNode -> getNodeData() << ", ";
     }
 }
 template <class Type>

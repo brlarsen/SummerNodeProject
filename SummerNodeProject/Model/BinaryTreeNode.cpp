@@ -20,7 +20,8 @@ BinaryTreeNode<Type> :: BinaryTreeNode() : DataNode<Type>()
 }
 
 template <class Type>
-BinaryTreeNode<Type> :: BinaryTreeNode(Type data) : DataNode<Type>(data)
+    BinaryTreeNode<Type> :: BinaryTreeNode(Type data) : DataNode<Type>(data)
+
 {
     //this -> setNodeData(data); This is not needed because of DataNode<Type>(data) above
     parent = nullptr;
