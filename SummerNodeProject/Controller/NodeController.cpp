@@ -11,6 +11,7 @@
 #include "../Model/SummerArray.cpp"
 #include <string>
 #include <iostream>
+#include "../Model/BinaryTree.cpp"
 
 using namespace std;
 
@@ -29,6 +30,21 @@ void NodeController :: tryNodes()
 void NodeController :: tryArray()
 {
     SummerArray<int> testArray(3);
+}
+
+void NodeController :: tryTree()
+{
+    BinaryTree<int> sampleTree;
+    sampleTree.insert(7);
+    sampleTree.insert(5);
+    sampleTree.insert(213);
+    sampleTree.insert(-123);
+    sampleTree.insert(5);
+    sampleTree.insert(123124);
+    sampleTree.insert(0);
+    
+    cout << "The in order traversal" << endl;
+    sampleTree.inOrderTraversal(sampleTree.getRoot());
 }
 
 void NodeController :: start()
