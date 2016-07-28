@@ -22,9 +22,11 @@ private:
 public:
     BinaryTreeNode<Type>();
     BinaryTreeNode<Type>(Type data);
+    
     BinaryTreeNode<Type> * getLeftChild();
     BinaryTreeNode<Type> * getRightChild();
     BinaryTreeNode<Type> * getparent();
+    
     void setLeftChild(BinaryTreeNode<Type> * leftChild);
     void setRightChild(BinaryTreeNode<Type> * rightChild);
     void setParent(BinaryTreeNode<Type> * parent);
