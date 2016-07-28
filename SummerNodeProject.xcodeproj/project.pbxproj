@@ -13,6 +13,7 @@
 		A416045D1D4907FA00AFE0A9 /* SummerArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A416045B1D4907FA00AFE0A9 /* SummerArray.cpp */; };
 		A41604601D4944D400AFE0A9 /* SummerList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A416045E1D4944D400AFE0A9 /* SummerList.cpp */; };
 		A41604631D4A53B300AFE0A9 /* BinaryTreeNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A41604611D4A53B300AFE0A9 /* BinaryTreeNode.cpp */; };
+		A41604661D4A696B00AFE0A9 /* BinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A41604641D4A696B00AFE0A9 /* BinaryTree.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		A416045F1D4944D400AFE0A9 /* SummerList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = SummerList.hpp; path = Model/SummerList.hpp; sourceTree = "<group>"; };
 		A41604611D4A53B300AFE0A9 /* BinaryTreeNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BinaryTreeNode.cpp; path = Model/BinaryTreeNode.cpp; sourceTree = "<group>"; };
 		A41604621D4A53B300AFE0A9 /* BinaryTreeNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = BinaryTreeNode.hpp; path = Model/BinaryTreeNode.hpp; sourceTree = "<group>"; };
+		A41604641D4A696B00AFE0A9 /* BinaryTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BinaryTree.cpp; path = Model/BinaryTree.cpp; sourceTree = "<group>"; };
+		A41604651D4A696B00AFE0A9 /* BinaryTree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = BinaryTree.hpp; path = Model/BinaryTree.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				A416045F1D4944D400AFE0A9 /* SummerList.hpp */,
 				A41604611D4A53B300AFE0A9 /* BinaryTreeNode.cpp */,
 				A41604621D4A53B300AFE0A9 /* BinaryTreeNode.hpp */,
+				A41604641D4A696B00AFE0A9 /* BinaryTree.cpp */,
+				A41604651D4A696B00AFE0A9 /* BinaryTree.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 				A416045D1D4907FA00AFE0A9 /* SummerArray.cpp in Sources */,
 				A41604591D480D9400AFE0A9 /* NodeController.cpp in Sources */,
 				A41604631D4A53B300AFE0A9 /* BinaryTreeNode.cpp in Sources */,
+				A41604661D4A696B00AFE0A9 /* BinaryTree.cpp in Sources */,
 				A41604481D47FE1900AFE0A9 /* main.cpp in Sources */,
 				A41604601D4944D400AFE0A9 /* SummerList.cpp in Sources */,
 				A41604501D47FF8E00AFE0A9 /* DataNode.cpp in Sources */,
