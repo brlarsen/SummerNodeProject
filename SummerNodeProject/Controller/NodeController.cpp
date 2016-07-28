@@ -58,5 +58,5 @@ void NodeController :: tryTree()
 
 void NodeController :: start()
 {
-    tryArray();
+    tryTree();
 }
