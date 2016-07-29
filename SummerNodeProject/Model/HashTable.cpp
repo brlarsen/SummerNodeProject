@@ -102,7 +102,7 @@ long HashTable<Type> :: handleCollision(Type data, long currentPosition)
             {
                 updatedPosition = index;
             }
-            indexPointer = indexPointer ->getNode();
+            indexPointer = indexPointer -> getNode();
         }
     }
     return updatedPosition;
