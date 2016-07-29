@@ -9,6 +9,7 @@
 #include "NodeController.hpp"
 #include "../Model/DataNode.cpp"
 #include "../Model/SummerArray.cpp"
+#include "../Model/HashTable.cpp"
 #include <string>
 #include <iostream>
 #include "../Model/BinaryTree.cpp"
@@ -60,9 +61,32 @@ void NodeController :: tryTree()
     cout << endl;
 }
 
+
+
+
+void NodeController :: tryHash()
+{
+    HashTable<int> numbersInHash;
+    
+    numbersInHash.add(123);
+    numbersInHash.add(342);
+    numbersInHash.add(123423);
+    
+    cout << "Current Contents" << endl;
+    numbersInHash.displayContents();
+    
+    numbersInHash.add(123413);
+    numbersInHash.add(-213);
+    numbersInHash.add(123);
+    numbersInHash.add(142342352);
+    
+    cout << "Current Contents" << endl;
+    numbersInHash.displayContents();
+}
+
 void NodeController :: start()
 {
-    tryTree();
+    tryHash();
 }
 
 //Java > (C# + Python + C++)
