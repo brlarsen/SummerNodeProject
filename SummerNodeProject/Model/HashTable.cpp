@@ -18,7 +18,7 @@ HashTable<Type> :: HashTable()
     this -> front = new HashNode<Type>();
     HashNode<Type> * currentEnd = front;
     //Loop to create the first array of nodes for storage.
-    for (int index = 1; index < capacity; index++)
+    for  (int index = 1; index < capacity; index++)
     {
     HashNode<Type> * next = new HashNode<Type>();
         currentEnd -> setNode(next);
@@ -26,4 +26,23 @@ HashTable<Type> :: HashTable()
     }
     
 }
-
+template <class Type>
+void HashTable<Type> :: add(Type data)
+{
+    if ((static_cast<double>(size) / capacity) >= efficiencyPercentage)
+    {
+        resize();
+    }
+    
+    long position = findPosition(data);
+    
+    HashNode<Type> * indexPointer = front;
+    
+    for(int index = 0; index < position; index++)
+    {
+        indexPointer = indexPointer -> getNode();
+    }
+    
+    indexPointer -> setData(data);
+    indexPointer -> setStuffed(true);
+}
